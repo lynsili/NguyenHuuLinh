@@ -1,0 +1,414 @@
+.about-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: #fffaf0;
+  padding-bottom: 60px;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.about-hero-overlay {
+  background: rgba(216, 67, 21, 0.75);
+  padding: 40px 30px;
+  border-radius: 20px;
+  max-width: 800px;
+  animation: fadeInDown 1.5s ease forwards;
+}
+
+.about-hero h1 {
+  font-size: 3.8rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+}
+
+.about-hero-btn {
+  background: #ff7043;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 112, 67, 0.7);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.about-hero-btn:hover {
+  background: #d84315;
+  transform: scale(1.1);
+}
+
+/* Our History */
+.our-history {
+  padding: 60px 20px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.our-history h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #d84315;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.history-timeline {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.timeline-item {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(216, 67, 21, 0.15);
+  padding: 30px 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.timeline-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(216, 67, 21, 0.3);
+}
+
+.timeline-item h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #d84315;
+  font-weight: 700;
+}
+
+.timeline-item p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 60px auto 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mission,
+.vision,
+.values {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(216, 67, 21, 0.15);
+  padding: 30px 25px;
+  flex: 1 1 280px;
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.mission:hover,
+.vision:hover,
+.values:hover {
+  box-shadow: 0 12px 40px rgba(216, 67, 21, 0.3);
+}
+
+.mission h3,
+.vision h3,
+.values h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #d84315;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.mission p,
+.vision p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.values ul {
+  list-style: inside disc;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  padding-left: 10px;
+}
+
+/* Team */
+.team {
+  max-width: 1100px;
+  margin: 60px auto 40px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #d84315;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(216, 67, 21, 0.15);
+  padding: 25px 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(216, 67, 21, 0.3);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #d84315;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.team-member h4 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #d84315;
+  font-weight: 700;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Awards */
+.awards {
+  max-width: 1000px;
+  margin: 60px auto 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(216, 67, 21, 0.15);
+  padding: 30px 25px;
+  text-align: center;
+  cursor: default;
+  transition: box-shadow 0.3s ease;
+}
+
+.awards:hover {
+  box-shadow: 0 12px 40px rgba(216, 67, 21, 0.3);
+}
+
+.awards h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #d84315;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.awards ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.awards ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.awards ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #d84315;
+  font-weight: bold;
+}
+
+/* Community */
+.community {
+  max-width: 1000px;
+  margin: 60px auto 40px;
+  text-align: center;
+}
+
+.community h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #d84315;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.community p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.community img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(216, 67, 21, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.community img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonials {
+  max-width: 1000px;
+  margin: 60px auto 40px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #d84315;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(216, 67, 21, 0.15);
+  padding: 30px 25px;
+  max-width: 320px;
+  font-style: italic;
+  color: #555;
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 12px 40px rgba(216, 67, 21, 0.3);
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.testimonial-card h4 {
+  margin-top: 20px;
+  font-weight: 700;
+  color: #d84315;
+  font-style: normal;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .history-timeline,
+  .mission-vision,
+  .team-grid,
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission,
+  .vision,
+  .values {
+    width: 100% !important;
+  }
+
+  .timeline-item,
+  .team-member,
+  .testimonial-card {
+    width: 90% !important;
+    margin-bottom: 30px;
+  }
+}

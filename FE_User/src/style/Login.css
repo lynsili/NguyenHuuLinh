@@ -1,0 +1,176 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --text-color: #333;
+  --red: #b5292f;
+}
+.f-login {
+  margin-top: 4px;
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s linear;
+}
+.modal.signup-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.hidden {
+  display: none;
+}
+
+.signup-login .modal-container {
+  width: 380px;
+  background: #fff;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+/* Khối chứa 2 form */
+.modal-container .forms {
+  width: 200%;
+  display: flex;
+  align-items: center;
+  height: 350px;
+  transform: translateX(0%);
+  transition: transform 0.4s ease;
+}
+
+.modal-container.active .forms {
+  transform: translateX(-50%);
+  height: 438px;
+}
+
+/* Nội dung form */
+.form-content {
+  padding: 20px;
+  width: 50%;
+  min-width: 50%;
+}
+
+.form-title {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-description {
+  text-align: center;
+  color: #808080;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s linear;
+}
+
+.form-control:focus {
+  border-color: var(--red);
+}
+
+.form-submit {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.form-close {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 30px;
+  width: 30px;
+  line-height: 29px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.change-login {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.change-form-btn {
+  background: none;
+  border: none;
+  color: var(--red);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.change-form-btn:hover {
+  text-decoration: underline;
+}
+
+/* Test login sign up */
+.lg-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lg-container button {
+  width: 50%;
+  border: 0;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background-color: var(--red);
+  cursor: pointer;
+}
+
+.lg-container button:first-of-type {
+  border-right: 1px solid #eee;
+}

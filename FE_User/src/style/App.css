@@ -1,0 +1,142 @@
+/* Reset mặc định */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* HEADER */
+
+.header .logo h1 {
+  margin: 0;
+}
+
+/* Menu */
+.header .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header .nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.header .nav ul li a,
+.header .nav ul li span {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s;
+}
+
+.header .nav ul li a:hover,
+.header .nav ul li span:hover {
+  border-bottom: 2px solid #ff7f50;
+}
+
+/* Dropdown menu hiển thị thẳng xuống */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  border-radius: 5px;
+  min-width: 180px;
+  padding: 5px 0;
+  display: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  padding: 12px 15px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #ff7f50;
+}
+
+/* Thanh tìm kiếm */
+/* Thanh tìm kiếm */
+.search-bar {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background: #444;
+  padding: 2px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 220px;
+  height: 38px;
+  flex-grow: 1; /* Ô input chiếm phần còn lại của không gian */
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  height: 38px;
+  margin-left: 8px; /* Khoảng cách giữa input và button */
+  transition: background 0.3s ease;
+  flex-shrink: 0; /* Đảm bảo button không bị co lại */
+}
+
+.search-bar button:hover {
+  background-color: #e06b3e;
+}
+
+/* Giỏ hàng */
+.cart {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart-count {
+  background: red;
+  color: white;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}

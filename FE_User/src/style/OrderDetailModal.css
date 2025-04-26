@@ -1,0 +1,249 @@
+/*Modal Box*/
+.modala {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 16;
+}
+
+.modal.opena {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal.opena .modal-containera {
+  transform: scale(1);
+}
+
+.modal-closea {
+  background-color: rgb(0 0 0 / 40%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: var(--white);
+  border: 0;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-closea i {
+  transition: all 0.4s;
+}
+
+.modal-closea:hover i {
+  transform: rotate(180deg);
+}
+
+.modal-containera {
+  background-color: var(--white);
+  max-height: calc(100vh - 60px);
+  box-shadow: 0px 4px 30px rgb(0 0 0 / 25%);
+  border-radius: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-y: overlay;
+  position: relative;
+  transform: scale(0.8);
+  transition: 0.3s ease;
+}
+
+.product-detaila .modal-containera {
+  width: 585px;
+}
+
+.signup-logina .modal-containera {
+  width: 380px;
+}
+
+.detail-ordera .modal-containera {
+  width: 550px;
+}
+
+.detail-order-contenta {
+  padding: 20px;
+}
+
+.modal-containera::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+.modal-containera::-webkit-scrollbar-track {
+  margin: 370px 0 80px;
+}
+
+.modal-containera::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+}
+
+.modal-containera:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.modal-bodya {
+  padding: 15px 20px;
+}
+
+.product-imagea {
+  width: 100%;
+  object-fit: cover;
+  max-height: 375px;
+}
+
+h2.product-titlea {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-controla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.priceBoxa .current-pricea {
+  color: var(--red);
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.priceBoxa .old-pricea {
+  text-decoration: line-through;
+  color: #808080;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.buttons_addeda {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.is-forma {
+  background-color: #f9f9f9;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.is-forma:focus,
+.input-texta:focus {
+  outline: none;
+}
+
+.is-forma.plus,
+.is-forma.minus {
+  border-radius: 50%;
+}
+
+.input-qtya {
+  background-color: #fff;
+  height: 25px;
+  width: 30px;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  padding: 0;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-qtya::-webkit-outer-spin-button,
+.input-qtya::-webkit-inner-spin-button {
+  --webkit-appearance: none;
+  margin: 0;
+}
+
+.product-descriptiona {
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.noteboxa {
+  border-top: 1px solid #eee;
+  padding: 12px 20px;
+}
+
+.notebox-titlea {
+  color: #808080;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text-notea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  font-size: 14px;
+}
+
+.modal-footera {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  background-color: var(--white);
+  position: sticky;
+  bottom: 0;
+}
+
+.price-totala {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-totala .thanhtien {
+  color: #808080;
+  font-size: 13px;
+}
+
+.price-totala .price {
+  color: var(--red);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.modal-footer-controla button {
+  background-color: var(--red);
+  border: none;
+  outline: none;
+  color: var(--white);
+  padding: 10px 25px;
+  font-size: 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
